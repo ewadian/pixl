@@ -1,0 +1,59 @@
+.gallery-container {
+    margin: 50px 0 50px 0;
+    height: auto;
+    width: 550px;
+}
+
+h2 {
+    margin: 50px 0 50px 0;
+    text-transform: none;
+    margin: 40px 0 15px 0;
+    filter: drop-shadow(2px 2px 1px rgb(2, 2, 2));
+}
+
+.instructions {
+    text-transform: none;
+    margin-bottom: 25px;
+}
+
+.gallery-container__cards {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.pixel-div {
+    width: auto;
+    height: auto;
+}
+
+.gallery-canvas {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    height: 100px;
+    width: 100px;
+    filter: drop-shadow(4px 4px 2px rgb(0, 0, 0) );
+}
+
+.gallery-card {
+    text-align: center;
+     width: 110px;
+}
+
+.gallery-card:hover {
+    cursor: pointer;
+}
+
+.gallery-card:hover .gallery-canvas {
+    filter: drop-shadow(6px 6px 2px rgb(0, 0, 0) );
+}
+
+.gallery-card p {
+    overflow-wrap: break-word;
+}
